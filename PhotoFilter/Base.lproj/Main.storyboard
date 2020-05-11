@@ -30,8 +30,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="PhotoEditor" id="IRq-6C-KLS">
-                        <barButtonItem key="rightBarButtonItem" title="Choose Photo" id="XXz-g5-yTH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Choose Photo" id="XXz-g5-yTH">
+                            <connections>
+                                <action selector="choosePhoto" destination="BYZ-38-t0r" id="62E-LP-H0f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="Yve-I0-AMT" id="SQF-YM-Ju4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
